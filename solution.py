@@ -1,5 +1,6 @@
+# source code in the description
 import pygame
-import math
+
 
 from queue import PriorityQueue
 
@@ -37,6 +38,7 @@ text2 = font3.render('Visualisation', True, RED)
 
 text3 = font2.render('Minh Vy Ha Version', True, b)
 text4 = font4.render('CREDIT: TECH WITH TIM', 1, b)
+text5 = font4.render('A* Algorithm', 1, b)
 
 
 class Button:
@@ -150,9 +152,9 @@ def draw(grid):
     win.blit(text2, (BORDER // 2 - text2.get_width() // 2, 45))
     win.blit(text3, (BORDER // 2 - text3.get_width() // 2, 85))
     win.blit(text4, (BORDER // 2 - text4.get_width() // 2, 120))
+    win.blit(text5, (BORDER // 2 - text5.get_width() // 2, 145))
     start_button.draw()
     reset_button.draw()
-    b = BORDER // GAP
     for i in range(ROW):
         grid[i][0].color = BLACK
         grid[i][COL - 22].color = BLACK
