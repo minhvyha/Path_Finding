@@ -20,6 +20,6 @@
 - Lambda
 
 ### About this project
-Pathfinding is 
+Google map is an application that everyone uses everyday to find the shortest path to their location using different path finding algorithms. I programmed the A* path finding algorithms 
 
 Note: pygame library need to be installed before running this project.
