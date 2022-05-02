@@ -26,14 +26,17 @@ ORANGE = (255, 165, 0)
 GREY = (180, 180, 180)
 DGREY = (50, 50, 50)
 TURQUOISE = (64, 224, 208)
-b = (225, 0, 0)
+b = (245, 0, 0)
 
-font = pygame.font.SysFont('Verdana', 26)
-font3 = pygame.font.SysFont('Verdana', 23)
-text1 = font.render('Path Finding', True, RED, GREY)
-text2 = font3.render('Visualisation', True, RED, GREY)
-font2 = pygame.font.SysFont('Verdana', 16)
-text3 = font2.render('Minh Vy Ha Version', True, b, GREY)
+font = pygame.font.SysFont('comicsans', 26)
+font2 = pygame.font.SysFont('comicsans', 16)
+font3 = pygame.font.SysFont('comicsans', 23)
+font4 = pygame.font.SysFont('comicsans', 13)
+text1 = font.render('Path Finding', True, RED)
+text2 = font3.render('Visualisation', True, RED)
+
+text3 = font2.render('Minh Vy Ha Version', True, b)
+text4 = font4.render('CREDIT: TECH WITH TIM', 1, b)
 
 
 class Button:
@@ -143,9 +146,10 @@ def draw_grid():
 
 def draw(grid):
     win.fill(GREY)
-    win.blit(text1, (13, 10))
-    win.blit(text2, (18, 45))
-    win.blit(text3, (14, 80))
+    win.blit(text1, (BORDER // 2 - text1.get_width() // 2, 10))
+    win.blit(text2, (BORDER // 2 - text2.get_width() // 2, 45))
+    win.blit(text3, (BORDER // 2 - text3.get_width() // 2, 85))
+    win.blit(text4, (BORDER // 2 - text4.get_width() // 2, 120))
     start_button.draw()
     reset_button.draw()
     b = BORDER // GAP
