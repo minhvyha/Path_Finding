@@ -1,7 +1,7 @@
 # **Pathfinding Visualisation**
 
 ## **Video Demo:**
-`https://youtu.be/G0AldvTkHY8`
+`[https://youtu.be/G0AldvTkHY8](https://youtu.be/NgerQ56ftOI)`
 
 ## **Description:**
 
